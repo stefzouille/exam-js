@@ -4,17 +4,17 @@ const isMagicSquare = (square) => {                                //parametre s
     d1Sum += square[i][i]                     // d1sum += plus ou egal a l index 0 et 1 du parametre de la fct
   }
 
-  let d2Sum = 0 // sum of second diagonal      //0 assigné a d2sum
+  let d2Sum = 0 // sum of second diagonal-------//0 assigné a d2sum
   for (let i = 0; i < square.length; ++i) {    //i declarer a la longueur du tab et incremente
     d2Sum += square[i][square.length - 1 - i]  //d2sum plus ou mon egal a l'index du tab et de la longueur -1 - l'index
   }
 
-  // check if diagonals are equal              
+  // check if diagonals are equal------------------------------------------             
   if (d1Sum !== d2Sum) {                       //d1sum n est pas egal a d2sum renvoi faux
     return false
   }
 
-  // check all row sum and compare each to d1Sum
+  // check all row sum and compare each to d1Sum----------------------------
   for (let i = 0; i < square.length; ++i) {    //boucle i a la longueur du parametre de la fct et incremente
     let rowSum = 0                             //0 assigné a la var rowSum
     for (let j = 0; j < square.length; ++j) {  //boucle j a la longueur du parametre de la fct et incremente

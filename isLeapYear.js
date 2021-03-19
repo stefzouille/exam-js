@@ -9,12 +9,12 @@
 // - si l'année est divisible par 400 (« divisible » signifie que la division donne un nombre entier, sans reste).
 // Pour calculer le reste d'une division il faut utiliser l'opérateur %
 
-const isLeapYear = (year) => {
-  if (year % 4 === 0 && year % 4 !== 100) {
-    return true
-  } else if ( year % 400 === 0) {
-    return true
-  } else {
+const isLeapYear = (year) => {                      //parametre year passé a islapYear
+  if (year % 4 === 0 && year % 4 !== 100) {         // si l année reste de 4 =0 et reste 4 !== 100
+    return true                                     //affiche true
+  } else if ( year % 400 === 0) {                   //sinon si l année reste 400 = 0
+    return true                                     // renvoi true
+  } else {                                          //sinon renvoi faux
     return false
   }
 }

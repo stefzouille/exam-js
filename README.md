@@ -1,1 +1,3 @@
 # exam-js
+
+refais pour training et apprentissage...
